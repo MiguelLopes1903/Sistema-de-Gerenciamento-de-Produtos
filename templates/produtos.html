@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='produtos.css') }}">
+</head>
+
+<body style="margin: 0px;">
+    <div class="pai">
+        <header>
+            <div class="logo">
+                <img src="isp_logo.png" alt="logo">
+            </div>
+
+            <div class="paginas">
+                <div class="inicio">
+                    <a href="/inicio" class="botao">
+                        <h2>Inicio</h2>
+                    </a>
+                </div>
+
+                <div class="Produtos">
+                    <a href="" class="botao">
+                        <h2>Produtos</h2>
+                    </a>
+                </div>
+
+                <div class="Financeiro">
+                    <a href="/Financeiro" class="botao">
+                        <h2>Financeiro</h2>
+                    </a>
+                </div>
+
+                <div class="Pedidos">
+                    <a href="/Pedidos" class="botao">
+                        <h2>Pedidos</h2>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="container-principal">
+            <form class="formulario-produto" action="/cadastrar" method="post" enctype="multipart/form-data">
+
+                <div class="area-upload-imagem">
+                    <div class="frame-imagem" id="frameImagem">
+                        <label for="inputArquivo" class="botao-upload">+</label>
+                        <input type="file" id="inputArquivo" name="foto_produto" class="input-oculto" accept="image/*">
+                    </div>
+
+                </div>
+
+                <div class="campos-formulario">
+
+                    <div class="linha-campo grupo-dois">
+                        <div class="campo">
+                            <label for="nomeProduto1">Nome do Produto:</label>
+                            <input type="text" id="nomeProduto1" name="nome_produto">
+                        </div>
+                        <div class="campo">
+                            <label for="nomeProduto2">Time:</label>
+                            <input type="tel" id="Time" name="Time">
+                        </div>
+                        <div class="campo">
+                            <label for="nomeProduto2">Estoque:</label>
+                            <input type="text" id="Estoque" name="Estoque">
+                        </div>
+                    </div>
+
+                    <div class="linha-campo grupo-tres">
+                        <div class="campo campo-data">
+                            <label for="data">Data:</label>
+                            <input type="date" style="color: rgba(0, 0, 0, 0.425);" id="data" name="data_cadastro">
+                        </div>
+                        <div class="campo campo-vazio">
+                        </div>
+                        <div class="campo campo-sku-simples">
+                            <label for="sku">Código do produto (SKU):</label>
+                            <input type="number" id="sku" name="sku">
+                        </div>
+                    </div>
+
+                    <div class="linha-campo grupo-tres">
+                        <div class="campo campo-preco">
+                            <label for="preco">Preço:</label>
+                            <input type="number" id="preco" name="preco" step="0.01">
+                        </div>
+                        <div class="campo campo-material">
+                            <label for="material">Material:</label>
+                            <input type="text" id="material" name="material">
+                        </div>
+                        <div class="campo campo-marca">
+                            <label for="marca">Marca:</label>
+                            <input type="text" id="marca" name="marca">
+                        </div>
+                    </div>
+
+                    <div class="linha-campo grupo-dois">
+                        <div class="campo campo-descricao">
+                            <label for="descricao">Sub Descrição:</label>
+                            <textarea class="caixa-maior" ontenteditable="true" id="descricao"
+                                name="descricao"></textarea>
+                        </div>
+                        <div class="campo campo-subdescricao">
+                            <label for="subdescricao">Descrição:</label>
+                            <textarea class="caixa-maior" id="subdescricao" name="sub_descricao"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" value="Finalizar" class="bottom">
+
+                </div>
+
+            </form>
+        </div>
+
+
+
+        <footer>
+            <div class="rodapé">
+                <p><strong> Sobre nós &nbsp; Política de Privacidade &nbsp; Termos de Privacidade <br><br>
+                        @ 2025 ISP CLOTHES. &nbsp; Todos os direitos reservados.</strong></p>
+
+            </div>
+
+
+        </footer>
+    </div>
+<script src="produtos.js"></script>
+
+
+
+
+
+
+
+</body>
+
+</html>

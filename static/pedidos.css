@@ -1,0 +1,91 @@
+.pai{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+ 
+}
+ 
+header{
+    background-color: rgb(68, 107, 192);
+    text-align: center;
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    flex-direction: row;
+    height: 2.8cm;
+}
+ 
+.logo{
+    height: 2cm;
+    width: 300px;
+    background-color: crimson;
+    margin-left: 50px;
+    margin-top: 0.4cm;
+ 
+}
+ 
+.paginas{
+    background-color: crimson;
+    height: 2cm;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 50px;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    margin-top: 0.4cm;
+}
+ 
+footer{
+    max-width: 1600px;
+    height: 100px;
+    background-color: #05064D;
+    margin-top: 10px;
+}
+ 
+.rodapé {
+    text-align: center;
+    color: aliceblue;
+    font-family: sans-serif;
+    align-content: center;
+   
+}
+p {
+    font-family: sans-serif;
+    text-align: center;
+    word-break: normal;
+}
+ 
+.botao{
+    text-decoration: none;
+    color: white;
+}
+
+.central{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2cm;
+}
+
+.central2{
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+.cabeçalho{
+   background-color: #05064D;
+   color: white;
+
+ }
+
+footer{
+    margin-top: 110px;
+}   
+
+.confirmado{
+   accent-color: rgb(153, 233, 87);
+}
+
